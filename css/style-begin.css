@@ -1,0 +1,259 @@
+
+body{
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	font-size: 15px;
+
+	color: #4d4d4d;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+
+/*header*/
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 50px;
+	border-bottom: 3px #fff solid;
+	background-color: #4d4d4d;
+	color: #fff;
+	z-index: 1000;
+}
+
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 7px;
+}
+
+.nav{
+	text-transform: uppercase;
+	
+	
+}
+
+.nav_link{
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+	color: #fff;
+	transition: color .2s linear;
+}
+
+.nav_link:hover{
+	color: #f60;
+}
+
+.head_logo{
+	font-size: 30px;
+	font-weight: 700;
+}
+
+/* intro*/
+.intro{
+	height: 400px;
+	width: 100%;
+	display: block;
+	background: url("../images/header-back.jpg") center no-repeat;
+	background-origin: content-box;
+	/*padding-bottom: 0;
+	position: relative;
+	z-index: -1;*/
+	margin: 0 0 40px 0;
+
+}
+
+.big_logo{
+	width: 1200px;
+	left:50%;
+	transform:translate(-50%, 50px);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	position: absolute;
+}
+
+.big1{
+	padding: 0 10px;
+	display: block;
+	width: 33.3%;
+	font-size: 24px;
+	z-index: 10;
+}
+
+.big_logo div:first-child{
+	text-align: right;
+}
+
+.big_logo div:last-child{
+	text-align: left;
+}
+
+
+/*NAVIGATION BLOCK*/
+/* main text*/
+.container h1{
+	font-size: 24px;
+	text-align: center;
+}
+
+.container h1:after{
+	content: "";
+	display: block;
+	width: 50%;
+	height: 3px;
+	background-color: #f60;
+	margin: 30px auto;
+}
+
+.container p{
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+/* end main block text*/
+/*navigation buttons*/
+
+.container h2{
+	color: #24689F;
+	font-size: 18px;
+	text-align: center;
+}
+
+.napravlenia{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 50px 0;
+}
+
+.working_lines{
+	display: block;
+	flex:0 0 20%;
+	min-width: 200px;
+	margin: 10px;
+	background-color: #24689F;
+	border-radius: 20px;
+	text-align: center;
+	overflow: hidden;
+	font-size: 12px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	transition: background-color .2s linear;
+	border: 2px solid #fff;
+}
+
+.working_lines:hover{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+	background-color: #f60;
+
+}
+.lines__row{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.nav_block{
+	
+}
+.nav_image img{
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+}
+
+
+.frezer{
+	width: 100%;
+	height: 100px;
+	background: #888 url('../images/frezer.jpg') 0 0 /100% auto no-repeat;
+}
+
+.laser{
+	background: #888 url('../images/laser.jpg') 0 0 /100% auto no-repeat;
+}
+
+.plotter{
+	background: #888 url('../images/plotter.jpg') 0 0 /100% auto no-repeat;
+}
+
+.orgsteklo{
+	background: #888 url('../images/orgsteklo.jpg') 0 0 /100% auto no-repeat;
+}
+
+.nav_header{
+	color: #fff;
+	text-transform: uppercase;
+	/*background-color: #24689F;*/
+	width: 100%;
+	padding: 5px;
+}
+
+
+.nav_text{
+	color: #fff;
+	padding: 10px;
+	
+	background-color: #aaa;
+}
+/*end nav buttons*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.working_lines_h {
+	color: #fff;
+	background-color: #24689F;
+	margin-top: 40px;
+	position: absolute;
+	top: 50%;
+	width: 100%
+
+}	
+
+.working_lines_p{
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+}*/
+
+
+
+
+
+
