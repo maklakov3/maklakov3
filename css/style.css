@@ -525,6 +525,11 @@ body {
 
 .section__text-main {
   text-align: left;
+  margin: 0 0 20px 0;
+}
+
+.section h2 {
+  font-size: 20px;
 }
 
 .services__title {
@@ -788,4 +793,116 @@ caption {
   text-align: left;
   margin: 0px 0px 10px 0px;
   color: #24689F;
+}
+
+.differences {
+  padding: 20px;
+}
+
+.differences h3 {
+  font-size: 18px;
+  position: relative;
+  padding: 5px;
+}
+
+.differences h3:after {
+  content: "";
+  left: 0px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#477ab4), color-stop(60%, rgba(24, 181, 164, 0)));
+  background-image: -webkit-linear-gradient(left, #477ab4 0%, rgba(24, 181, 164, 0) 60%);
+  background-image: -o-linear-gradient(left, #477ab4 0%, rgba(24, 181, 164, 0) 60%);
+  background-image: linear-gradient(to right, #477ab4 0%, rgba(24, 181, 164, 0) 60%);
+}
+
+.differences p {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.example {
+  color: #0050b8;
+  font-weight: 700;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 16, 24, 0.705);
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .1s linear 0s;
+  -o-transition: all .1s linear 0s;
+  transition: all .1s linear 0s;
+}
+
+.popup__area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  background-color: #fff;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  -webkit-transition: all .2s linear 0s;
+  -o-transition: all .2s linear 0s;
+  transition: all .2s linear 0s;
+  opacity: 0;
+  -webkit-transform: translate(-100%, 0) scale(0);
+      -ms-transform: translate(-100%, 0) scale(0);
+          transform: translate(-100%, 0) scale(0);
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+}
+
+.popup__title {
+  font-size: 20px;
+  margin: 0 0 1em 0;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px) scale(100%);
+      -ms-transform: translate(0px, 0px) scale(100%);
+          transform: translate(0px, 0px) scale(100%);
 }
